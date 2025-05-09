@@ -1,0 +1,436 @@
+{
+    "representation_quality": {
+        "TS-TCC": {
+            "classification": {
+                "LogisticRegression": {
+                    "accuracy": 0.9169894853348091,
+                    "precision": 0.8795608874701281,
+                    "recall": 0.9169894853348091,
+                    "f1_score": 0.8870342293185756,
+                    "auc": 0.8068250623429922
+                },
+                "SVM": {
+                    "accuracy": 0.9225235196458218,
+                    "precision": 0.906849195452096,
+                    "recall": 0.9225235196458218,
+                    "f1_score": 0.8914835323129573,
+                    "auc": 0.798474092000773
+                },
+                "RandomForest": {
+                    "accuracy": 0.925106068990961,
+                    "precision": 0.9077342142303968,
+                    "recall": 0.925106068990961,
+                    "f1_score": 0.902852711542142,
+                    "auc": 0.8631410285903581
+                }
+            },
+            "clustering": {
+                "silhouette_score": 0.12607404589653015,
+                "davies_bouldin_score": 2.8048062729677086,
+                "calinski_harabasz_score": 606.1817016601562
+            },
+            "reconstruction_error": null
+        },
+        "RecurrentAutoencoder": {
+            "classification": {
+                "LogisticRegression": {
+                    "accuracy": 0.9193875668695812,
+                    "precision": 0.8819151512606503,
+                    "recall": 0.9193875668695812,
+                    "f1_score": 0.882367071865356,
+                    "auc": 0.7464913087887516
+                },
+                "SVM": {
+                    "accuracy": 0.9193875668695812,
+                    "precision": 0.8455990813366905,
+                    "recall": 0.9193875668695812,
+                    "f1_score": 0.8809508930023763,
+                    "auc": 0.801477827979351
+                },
+                "RandomForest": {
+                    "accuracy": 0.9252905368013282,
+                    "precision": 0.9102431810854893,
+                    "recall": 0.9252905368013282,
+                    "f1_score": 0.9004478264379576,
+                    "auc": 0.8465814875820121
+                }
+            },
+            "clustering": {
+                "silhouette_score": 0.3304399251937866,
+                "davies_bouldin_score": 1.2079295817483053,
+                "calinski_harabasz_score": 3326.277099609375
+            },
+            "reconstruction_error": 0.16011648381970933
+        },
+        "InformativeMissingness": {
+            "classification": {
+                "LogisticRegression": {
+                    "accuracy": 0.9192030990592142,
+                    "precision": 0.8869850023993103,
+                    "recall": 0.9192030990592142,
+                    "f1_score": 0.8877393261552176,
+                    "auc": 0.8149701397771296
+                },
+                "SVM": {
+                    "accuracy": 0.9195720346799483,
+                    "precision": 0.8456127269654201,
+                    "recall": 0.9195720346799483,
+                    "f1_score": 0.8810429738380823,
+                    "auc": 0.7869466196755404
+                },
+                "RandomForest": {
+                    "accuracy": 0.9247371333702269,
+                    "precision": 0.908537025130826,
+                    "recall": 0.9247371333702269,
+                    "f1_score": 0.8995889854502576,
+                    "auc": 0.837939276545232
+                }
+            },
+            "clustering": {
+                "silhouette_score": 0.24365781247615814,
+                "davies_bouldin_score": 2.2541013172086313,
+                "calinski_harabasz_score": 708.5819702148438
+            },
+            "reconstruction_error": 0.02723938395385844
+        },
+        "SignatureTransform": {
+            "classification": {
+                "LogisticRegression": {
+                    "accuracy": 0.5216749677181332,
+                    "precision": 0.8489119143856876,
+                    "recall": 0.5216749677181332,
+                    "f1_score": 0.6266530903649432,
+                    "auc": 0.4887626181296182
+                },
+                "SVM": {
+                    "accuracy": 0.9195720346799483,
+                    "precision": 0.8456127269654201,
+                    "recall": 0.9195720346799483,
+                    "f1_score": 0.8810429738380823,
+                    "auc": 0.5
+                },
+                "RandomForest": {
+                    "accuracy": 0.11049621840988748,
+                    "precision": 0.8850406438644269,
+                    "recall": 0.11049621840988748,
+                    "f1_score": 0.0730262724472276,
+                    "auc": 0.47872148555759014
+                }
+            },
+            "clustering": {
+                "silhouette_score": 0.1605726870092393,
+                "davies_bouldin_score": 2.1142063357891683,
+                "calinski_harabasz_score": 1006.6217034333409
+            },
+            "reconstruction_error": null
+        },
+        "StatisticalFeature": {
+            "classification": {
+                "LogisticRegression": {
+                    "accuracy": 0.6436081903707803,
+                    "precision": 0.8408795344813843,
+                    "recall": 0.6436081903707802,
+                    "f1_score": 0.7230995464161538,
+                    "auc": 0.4673304316619583
+                },
+                "SVM": {
+                    "accuracy": 0.9195720346799483,
+                    "precision": 0.8456127269654201,
+                    "recall": 0.9195720346799483,
+                    "f1_score": 0.8810429738380823,
+                    "auc": 0.5239484508571587
+                },
+                "RandomForest": {
+                    "accuracy": 0.6969193875668696,
+                    "precision": 0.8492731843991072,
+                    "recall": 0.6969193875668697,
+                    "f1_score": 0.7605688364558308,
+                    "auc": 0.4907194059241946
+                }
+            },
+            "clustering": {
+                "silhouette_score": 0.5194822878494268,
+                "davies_bouldin_score": 0.8051051993559192,
+                "calinski_harabasz_score": 5294.400498157803
+            },
+            "reconstruction_error": null
+        },
+        "RGAN": {
+            "classification": {
+                "LogisticRegression": {
+                    "accuracy": 0.9195720346799483,
+                    "precision": 0.8456127269654201,
+                    "recall": 0.9195720346799483,
+                    "f1_score": 0.8810429738380823,
+                    "auc": 0.7190300258573886
+                },
+                "SVM": {
+                    "accuracy": 0.9195720346799483,
+                    "precision": 0.8456127269654201,
+                    "recall": 0.9195720346799483,
+                    "f1_score": 0.8810429738380823,
+                    "auc": 0.6709937150902248
+                },
+                "RandomForest": {
+                    "accuracy": 0.9195720346799483,
+                    "precision": 0.8456127269654201,
+                    "recall": 0.9195720346799483,
+                    "f1_score": 0.8810429738380823,
+                    "auc": 0.6893317567381041
+                }
+            },
+            "clustering": {
+                "silhouette_score": 0.17283134162425995,
+                "davies_bouldin_score": 2.0311055784065157,
+                "calinski_harabasz_score": 1241.8822021484375
+            },
+            "reconstruction_error": null
+        }
+    },
+    "computational_efficiency": {
+        "TS-TCC": {
+            "training_time": 113.53529286384583,
+            "inference_time": 0.0031707763671875,
+            "memory_usage": 810.92578125,
+            "parameter_count": 82400
+        },
+        "RecurrentAutoencoder": {
+            "training_time": 639.4492421150208,
+            "inference_time": 0.04583542346954346,
+            "memory_usage": 850.16796875,
+            "parameter_count": 376650
+        },
+        "InformativeMissingness": {
+            "training_time": 891.2610721588135,
+            "inference_time": 0.06347019672393799,
+            "memory_usage": 832.8203125,
+            "parameter_count": 100505
+        },
+        "SignatureTransform": {
+            "training_time": 327.00828289985657,
+            "inference_time": 0.014601540565490723,
+            "memory_usage": 860.08984375,
+            "parameter_count": 7170
+        },
+        "StatisticalFeature": {
+            "training_time": 208.99440693855286,
+            "inference_time": 0.009302115440368653,
+            "memory_usage": 909.97265625,
+            "parameter_count": 1310
+        },
+        "RGAN": {
+            "training_time": 1355.9957416057587,
+            "inference_time": 0.013545083999633788,
+            "memory_usage": 895.40234375,
+            "parameter_count": 369675
+        }
+    },
+    "scalability": {
+        "TS-TCC": {
+            "data_sizes": {
+                "0.2": 23.004048109054565,
+                "0.4": 45.76244401931763,
+                "0.6": 68.46157908439636,
+                "0.8": 91.90450310707092,
+                "1.0": 116.29149222373962
+            },
+            "missing_values": {
+                "0.0": 115.59930539131165,
+                "0.1": 115.37879252433777,
+                "0.2": 115.16318893432617,
+                "0.3": 115.18408727645874,
+                "0.4": 114.87986731529236
+            }
+        },
+        "RecurrentAutoencoder": {
+            "data_sizes": {
+                "0.2": 145.7248659133911,
+                "0.4": 264.6069257259369,
+                "0.6": 387.38537669181824,
+                "0.8": 526.121185541153,
+                "1.0": 668.6651082038879
+            },
+            "missing_values": {
+                "0.0": 671.7453889846802,
+                "0.1": 609.4808144569397,
+                "0.2": 603.5611796379089,
+                "0.3": 555.6049571037292,
+                "0.4": 527.2195675373077
+            }
+        },
+        "InformativeMissingness": {
+            "data_sizes": {
+                "0.2": 177.6933274269104,
+                "0.4": 356.3849310874939,
+                "0.6": 536.5139167308807,
+                "0.8": 718.8592376708984,
+                "1.0": 896.643461227417
+            },
+            "missing_values": {
+                "0.0": 897.0036811828613,
+                "0.1": 894.1477086544037,
+                "0.2": 897.067351102829,
+                "0.3": 894.174307346344,
+                "0.4": 895.014479637146
+            }
+        },
+        "SignatureTransform": {
+            "data_sizes": {
+                "0.2": 65.44759202003479,
+                "0.4": 131.26954197883606,
+                "0.6": 196.59392881393433,
+                "0.8": 262.2647452354431,
+                "1.0": 328.35874795913696
+            },
+            "missing_values": {
+                "0.0": 327.8944687843323,
+                "0.1": 331.7012791633606,
+                "0.2": 335.1579821109772,
+                "0.3": 338.6528687477112,
+                "0.4": 342.14190888404846
+            }
+        },
+        "StatisticalFeature": {
+            "data_sizes": {
+                "0.2": 42.07623314857483,
+                "0.4": 83.66893172264099,
+                "0.6": 125.33204388618469,
+                "0.8": 168.09555292129517,
+                "1.0": 210.1212043762207
+            },
+            "missing_values": {
+                "0.0": 209.75914311408997,
+                "0.1": 209.66417241096497,
+                "0.2": 210.1216242313385,
+                "0.3": 209.54999017715454,
+                "0.4": 209.46720600128174
+            }
+        },
+        "RGAN": {
+            "data_sizes": {
+                "0.2": 289.9285681247711,
+                "0.4": 576.7999725341797,
+                "0.6": 783.5313234329224,
+                "0.8": 1036.2813630104065,
+                "1.0": 1545.740854024887
+            },
+            "missing_values": {
+                "0.0": 1269.6728093624115,
+                "0.1": 1372.085515499115,
+                "0.2": 1413.8340773582458,
+                "0.3": 1427.314879655838,
+                "0.4": 1431.5405638217926
+            }
+        }
+    },
+    "generalization": {
+        "TS-TCC": {
+            "base_performance": {
+                "accuracy": 0.9169894853348091,
+                "f1": 0.8870342293185756
+            },
+            "patient_performance": {
+                "accuracy_mean": 0.9158652729384437,
+                "accuracy_std": 0.19016654387052093,
+                "f1_mean": 0.9022255406227531,
+                "f1_std": 0.22846906907447118
+            },
+            "robustness": {
+                "accuracy_mean": 0.9167681239623686,
+                "accuracy_std": 0.000526945466042648,
+                "f1_mean": 0.885679558218758,
+                "f1_std": 0.0009341151413534928
+            }
+        },
+        "RecurrentAutoencoder": {
+            "base_performance": {
+                "accuracy": 0.9193875668695812,
+                "f1": 0.882367071865356
+            },
+            "patient_performance": {
+                "accuracy_mean": 0.9182462253193961,
+                "accuracy_std": 0.18441246692166735,
+                "f1_mean": 0.8980045351473922,
+                "f1_std": 0.2313900003973509
+            },
+            "robustness": {
+                "accuracy_mean": 0.9196827153661686,
+                "accuracy_std": 9.037040187361779e-05,
+                "f1_mean": 0.8817442798477725,
+                "f1_std": 0.0001745502881133655
+            }
+        },
+        "InformativeMissingness": {
+            "base_performance": {
+                "accuracy": 0.9192030990592142,
+                "f1": 0.8877393261552176
+            },
+            "patient_performance": {
+                "accuracy_mean": 0.9197560975609756,
+                "accuracy_std": 0.18204259640881912,
+                "f1_mean": 0.9032310159836293,
+                "f1_std": 0.2263776436256275
+            },
+            "robustness": {
+                "accuracy_mean": 0.9191293119350673,
+                "accuracy_std": 0.0005165098690278671,
+                "f1_mean": 0.8869651437119765,
+                "f1_std": 0.0010389597799501486
+            }
+        },
+        "SignatureTransform": {
+            "base_performance": {
+                "accuracy": 0.5216749677181332,
+                "f1": 0.6266530903649432
+            },
+            "patient_performance": {
+                "accuracy_mean": 0.5238327526132404,
+                "accuracy_std": 0.34397465882153777,
+                "f1_mean": 0.9021270947403351,
+                "f1_std": 0.26070878481724336
+            },
+            "robustness": {
+                "accuracy_mean": 0.5107913669064749,
+                "accuracy_std": 0.01089516299043695,
+                "f1_mean": 0.616643538683707,
+                "f1_std": 0.009439493712091108
+            }
+        },
+        "StatisticalFeature": {
+            "base_performance": {
+                "accuracy": 0.6436081903707803,
+                "f1": 0.7230995464161538
+            },
+            "patient_performance": {
+                "accuracy_mean": 0.6488269454123112,
+                "accuracy_std": 0.32989160788918254,
+                "f1_mean": 0.8951518168242907,
+                "f1_std": 0.26471725564580034
+            },
+            "robustness": {
+                "accuracy_mean": 0.5831027485703745,
+                "accuracy_std": 0.061141771568240404,
+                "f1_mean": 0.67447054536765,
+                "f1_std": 0.051421560866942
+            }
+        },
+        "RGAN": {
+            "base_performance": {
+                "accuracy": 0.9195720346799483,
+                "f1": 0.8810429738380823
+            },
+            "patient_performance": {
+                "accuracy_mean": 0.9191753774680606,
+                "accuracy_std": 0.18419210076999887,
+                "f1_mean": 0.8978187047176593,
+                "f1_std": 0.23129460798114365
+            },
+            "robustness": {
+                "accuracy_mean": 0.9194982475558013,
+                "accuracy_std": 9.03704018735634e-05,
+                "f1_mean": 0.8810061415038,
+                "f1_std": 4.511021251374941e-05
+            }
+        }
+    }
+}

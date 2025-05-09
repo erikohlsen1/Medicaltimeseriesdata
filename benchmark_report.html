@@ -1,0 +1,178 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Benchmark-Ergebnisse für unüberwachte Modelle</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 20px; }
+                h1, h2, h3 { color: #333; }
+                table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+                th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                th { background-color: #f2f2f2; }
+                tr:nth-child(even) { background-color: #f9f9f9; }
+                .section { margin-bottom: 30px; }
+                .image-container { display: flex; flex-wrap: wrap; justify-content: center; }
+                .image-container img { margin: 10px; max-width: 100%; box-shadow: 0 0 5px rgba(0,0,0,0.2); }
+                .summary { background-color: #f5f5f5; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+            </style>
+        </head>
+        <body>
+            <h1>Benchmark-Ergebnisse für unüberwachte Modelle</h1>
+
+            <div class="summary">
+                <h2>Zusammenfassung</h2>
+                <p>Dieser Bericht enthält die Benchmark-Ergebnisse für die folgenden unüberwachten Lernmodelle:</p>
+                <ul>
+        <li>TS-TCC</li>
+<li>RecurrentAutoencoder</li>
+<li>InformativeMissingness</li>
+<li>SignatureTransform</li>
+<li>StatisticalFeature</li>
+<li>RGAN</li>
+
+                </ul>
+                <p>Die Modelle wurden anhand der folgenden Kriterien bewertet:</p>
+                <ul>
+                    <li><strong>Repräsentationsqualität:</strong> Downstream-Klassifikation, Clustering-Metriken, Rekonstruktionsfehler</li>
+                    <li><strong>Recheneffizienz:</strong> Trainingszeit, Inferenzzeit, Speicherverbrauch</li>
+                    <li><strong>Skalierbarkeit:</strong> Leistung mit zunehmender Datengröße, Umgang mit fehlenden Werten</li>
+                    <li><strong>Generalisierung:</strong> Robustheit, Patientenübergreifende Leistung</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Modellvergleiche</h2>
+                <div class="image-container">
+                    <img src="radar_comparison.png" alt="Radar-Vergleich der Modelle">
+                    <img src="classification_comparison.png" alt="Klassifikationsvergleich">
+                    <img src="efficiency_comparison.png" alt="Effizienzvergleich">
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Detaillierte Ergebnisse</h2>
+        
+                <h3>Repräsentationsqualität</h3>
+                <table>
+                    <tr>
+                        <th>Modell</th>
+                        <th>LR Accuracy</th>
+                        <th>LR F1-Score</th>
+                        <th>RF Accuracy</th>
+                        <th>RF F1-Score</th>
+                        <th>SVM Accuracy</th>
+                        <th>SVM F1-Score</th>
+                        <th>Silhouette Score</th>
+                        <th>Davies-Bouldin</th>
+                        <th>Calinski-Harabasz</th>
+                        <th>Rekonstruktionsfehler</th>
+                    </tr>
+        <tr><td>TS-TCC</td><td>0.9170</td><td>0.8870</td><td>0.9251</td><td>0.9029</td><td>0.9225</td><td>0.8915</td><td>0.1261</td><td>2.8048</td><td>606.1817</td><td>-</td></tr>
+<tr><td>RecurrentAutoencoder</td><td>0.9194</td><td>0.8824</td><td>0.9253</td><td>0.9004</td><td>0.9194</td><td>0.8810</td><td>0.3304</td><td>1.2079</td><td>3326.2771</td><td>0.160116</td></tr>
+<tr><td>InformativeMissingness</td><td>0.9192</td><td>0.8877</td><td>0.9247</td><td>0.8996</td><td>0.9196</td><td>0.8810</td><td>0.2437</td><td>2.2541</td><td>708.5820</td><td>0.027239</td></tr>
+<tr><td>SignatureTransform</td><td>0.5217</td><td>0.6267</td><td>0.1105</td><td>0.0730</td><td>0.9196</td><td>0.8810</td><td>0.1606</td><td>2.1142</td><td>1006.6217</td><td>-</td></tr>
+<tr><td>StatisticalFeature</td><td>0.6436</td><td>0.7231</td><td>0.6969</td><td>0.7606</td><td>0.9196</td><td>0.8810</td><td>0.5195</td><td>0.8051</td><td>5294.4005</td><td>-</td></tr>
+<tr><td>RGAN</td><td>0.9196</td><td>0.8810</td><td>0.9196</td><td>0.8810</td><td>0.9196</td><td>0.8810</td><td>0.1728</td><td>2.0311</td><td>1241.8822</td><td>-</td></tr>
+
+                </table>
+
+                <h3>Recheneffizienz</h3>
+                <table>
+                    <tr>
+                        <th>Modell</th>
+                        <th>Trainingszeit (s)</th>
+                        <th>Inferenzzeit (s)</th>
+                        <th>Speicherverbrauch (MB)</th>
+                        <th>Anzahl Parameter</th>
+                    </tr>
+        <tr><td>TS-TCC</td><td>113.54</td><td>0.003171</td><td>810.93</td><td>82400</td></tr>
+<tr><td>RecurrentAutoencoder</td><td>639.45</td><td>0.045835</td><td>850.17</td><td>376650</td></tr>
+<tr><td>InformativeMissingness</td><td>891.26</td><td>0.063470</td><td>832.82</td><td>100505</td></tr>
+<tr><td>SignatureTransform</td><td>327.01</td><td>0.014602</td><td>860.09</td><td>7170</td></tr>
+<tr><td>StatisticalFeature</td><td>208.99</td><td>0.009302</td><td>909.97</td><td>1310</td></tr>
+<tr><td>RGAN</td><td>1356.00</td><td>0.013545</td><td>895.40</td><td>369675</td></tr>
+
+                </table>
+
+                <h3>Generalisierung</h3>
+                <table>
+                    <tr>
+                        <th>Modell</th>
+                        <th>Basis Accuracy</th>
+                        <th>Basis F1-Score</th>
+                        <th>Patientenweise Accuracy</th>
+                        <th>Patientenweise F1-Score</th>
+                        <th>Robustheit Accuracy</th>
+                        <th>Robustheit F1-Score</th>
+                    </tr>
+        <tr><td>TS-TCC</td><td>0.9170</td><td>0.8870</td><td>0.9159 ± 0.1902</td><td>0.9022 ± 0.2285</td><td>0.9168 ± 0.0005</td><td>0.8857 ± 0.0009</td></tr>
+<tr><td>RecurrentAutoencoder</td><td>0.9194</td><td>0.8824</td><td>0.9182 ± 0.1844</td><td>0.8980 ± 0.2314</td><td>0.9197 ± 0.0001</td><td>0.8817 ± 0.0002</td></tr>
+<tr><td>InformativeMissingness</td><td>0.9192</td><td>0.8877</td><td>0.9198 ± 0.1820</td><td>0.9032 ± 0.2264</td><td>0.9191 ± 0.0005</td><td>0.8870 ± 0.0010</td></tr>
+<tr><td>SignatureTransform</td><td>0.5217</td><td>0.6267</td><td>0.5238 ± 0.3440</td><td>0.9021 ± 0.2607</td><td>0.5108 ± 0.0109</td><td>0.6166 ± 0.0094</td></tr>
+<tr><td>StatisticalFeature</td><td>0.6436</td><td>0.7231</td><td>0.6488 ± 0.3299</td><td>0.8952 ± 0.2647</td><td>0.5831 ± 0.0611</td><td>0.6745 ± 0.0514</td></tr>
+<tr><td>RGAN</td><td>0.9196</td><td>0.8810</td><td>0.9192 ± 0.1842</td><td>0.8978 ± 0.2313</td><td>0.9195 ± 0.0001</td><td>0.8810 ± 0.0000</td></tr>
+
+                </table>
+            </div>
+
+            <div class="section">
+                <h2>Visualisierungen der einzelnen Modelle</h2>
+                <div class="image-container">
+        
+                    <div>
+                        <h3>TS-TCC</h3>
+                        <img src="TS-TCC_feature_visualization.png" alt="TS-TCC Feature-Visualisierung">
+                        <img src="TS-TCC_scalability.png" alt="TS-TCC Skalierbarkeit">
+                    </div>
+            
+                    <div>
+                        <h3>RecurrentAutoencoder</h3>
+                        <img src="RecurrentAutoencoder_feature_visualization.png" alt="RecurrentAutoencoder Feature-Visualisierung">
+                        <img src="RecurrentAutoencoder_scalability.png" alt="RecurrentAutoencoder Skalierbarkeit">
+                    </div>
+            
+                    <div>
+                        <h3>InformativeMissingness</h3>
+                        <img src="InformativeMissingness_feature_visualization.png" alt="InformativeMissingness Feature-Visualisierung">
+                        <img src="InformativeMissingness_scalability.png" alt="InformativeMissingness Skalierbarkeit">
+                    </div>
+            
+                    <div>
+                        <h3>SignatureTransform</h3>
+                        <img src="SignatureTransform_feature_visualization.png" alt="SignatureTransform Feature-Visualisierung">
+                        <img src="SignatureTransform_scalability.png" alt="SignatureTransform Skalierbarkeit">
+                    </div>
+            
+                    <div>
+                        <h3>StatisticalFeature</h3>
+                        <img src="StatisticalFeature_feature_visualization.png" alt="StatisticalFeature Feature-Visualisierung">
+                        <img src="StatisticalFeature_scalability.png" alt="StatisticalFeature Skalierbarkeit">
+                    </div>
+            
+                    <div>
+                        <h3>RGAN</h3>
+                        <img src="RGAN_feature_visualization.png" alt="RGAN Feature-Visualisierung">
+                        <img src="RGAN_scalability.png" alt="RGAN Skalierbarkeit">
+                    </div>
+            
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Fazit und Empfehlungen</h2>
+                <p>Basierend auf den Benchmark-Ergebnissen können folgende Empfehlungen gegeben werden:</p>
+                <ul>
+                    <li><strong>Beste Repräsentationsqualität:</strong> [Wird basierend auf den Ergebnissen ausgefüllt]</li>
+                    <li><strong>Beste Recheneffizienz:</strong> [Wird basierend auf den Ergebnissen ausgefüllt]</li>
+                    <li><strong>Beste Skalierbarkeit:</strong> [Wird basierend auf den Ergebnissen ausgefüllt]</li>
+                    <li><strong>Beste Generalisierung:</strong> [Wird basierend auf den Ergebnissen ausgefüllt]</li>
+                </ul>
+                <p>Die Auswahl des optimalen Modells hängt von den spezifischen Anforderungen des Anwendungsfalls ab.</p>
+            </div>
+
+            <footer>
+                <p>Benchmark-Bericht erstellt am [Datum]</p>
+            </footer>
+        </body>
+        </html>
+        
