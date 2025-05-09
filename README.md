@@ -17,3 +17,6 @@ Neural network approaches (RGAN, Recurrent Autoencoder, Informative Missingness 
 Mathematical approaches (Statistical Features and Signature Transform) showed advantages in computational efficiency, interpretability, and clustering capability
 Consistent physiological patterns emerged across models, including "Hemodynamically Unstable," "Febrile/Inflammatory," "Respiratory Compromise," "Compensated Shock," and "Labile Physiology" profiles
 Results suggest a potential shift from threshold-based to pattern-based physiological monitoring that recognizes complex, multivariate patterns
+
+
+I have made two main python files, which analysed the data, one more focused on the Benchmarking Comparison the other more focused on the cluster representations. All relevant retrieved data is uploaded as files in the repository.
